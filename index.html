@@ -473,7 +473,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const subj=['Matematika','Bahasa Indonesia','Ilmu Pengetahuan Alam','Bahasa Inggris'],colors=['blue','teal','amber','violet'],symbols=['calc','book','flask','lang'];
 const bank=[...mathQuestions,...indonesiaQuestions,...ipaQuestions,...englishQuestions],active=bank.flatMap((q,i)=>q?[i]:[]);
 // Isi dua nilai ini dari Supabase Project Settings > API.
-const SUPABASE_URL = 'https://ruuypsylfhakwisfispn.supabase.co/rest/v1/';
+const SUPABASE_URL = 'https://ruuypsylfhakwisfispn.supabase.co';
 const SUPABASE_PUBLIC_KEY = 'sb_publishable_Wwwlt9rRVGKbT0-5pCxuwQ_u_4QpqLJ';
 const sb = (window.supabase && SUPABASE_URL.includes('.supabase.co') &&
   !SUPABASE_URL.includes('YOUR_PROJECT_ID') &&
